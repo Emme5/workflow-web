@@ -1,19 +1,31 @@
 "use client";
 
-import React from 'react'
-import { useForm } from 'react-hook-form';
+import { signupSchema } from "@/schema/validationSchema";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import GoogleButton from "../Buttons/GoogleButton";
 
 const SignupForm = () => {
-
   const form = useForm({
-  resolove: zodResolver(schema)
-})
+    resolver: zodResolver(signupSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      password: "",
+    },
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   return (
-    <div>
-      MySignupform
+    <div className="grid w-full items-center gap-4">
+      <div className="flex items-center gap-3.5">
+        <GoogleButton text="Sign up with Google" />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default SignupForm
+export default SignupForm;
