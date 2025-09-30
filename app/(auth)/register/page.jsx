@@ -11,14 +11,16 @@ import {
 
 const SignupPage = () => {
   return (
-    <section className="flex items-center justify-center h-screen">
+    <section className="relative flex min-h-screen items-center justify-center bg-background px-4">
+      {/* ปุ่มสลับโหมด */}
       <div className="fixed top-5 right-5">
         <ModeToggle />
       </div>
 
-      <Card className="w-full rounded-lg shadow border border-input md:mt-0 sm:max-w-[32rem] xl:p-0">
-        <CardHeader>
-          <CardTitle>Create an Account</CardTitle>
+      {/* กล่อง Card */}
+      <Card className="w-full max-w-md rounded-lg border border-input shadow-lg sm:max-w-lg md:max-w-xl">
+        <CardHeader className="space-y-1 text-center">
+          <CardTitle className="text-2xl font-bold">Create an Account</CardTitle>
           <CardDescription>
             Let's get started. No credit card needed.
           </CardDescription>

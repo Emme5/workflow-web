@@ -8,7 +8,7 @@ const font = DM_Sans({
 });
 
 export const metadata = {
-  title: "Wiza",
+  title: "Hello World?",
   description: "Automate you work",
 };
 
