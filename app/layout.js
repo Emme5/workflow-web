@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${font.className} antialiased`}
+        className={`${font.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
