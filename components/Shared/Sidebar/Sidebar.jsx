@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
     <div>
       <div className="w-full h-[60px] flex items-center px-4">
-        <h2 className="text-xl font-semibold">Automation ที่บ้าน</h2>
+        <h2 className="text-xl font-semibold">Automation</h2>
       </div>
       <div className="p-3">
         {sidebarNavLinks.map((navItem, index) => (

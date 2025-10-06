@@ -1,4 +1,5 @@
 import Sidebar from "@/components/Shared/Sidebar/Sidebar";
+import Topbar from "@/components/Shared/Topbar/Topbar";
 
 export default async function ProtectedLayout({ children }) {
     return (
@@ -9,7 +10,7 @@ export default async function ProtectedLayout({ children }) {
                 </aside>
 
                 <div className="w-[calc(100%-220px)] bg-[#F2F4F7] dark:bg-background">
-                    topbar
+                    <Topbar />
                     <div>{children}</div>
                 </div>
             </div>

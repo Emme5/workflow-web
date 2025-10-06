@@ -23,3 +23,18 @@ export const sidebarNavLinks = [
     icon: <GoGitBranch size={18} />,
   },
 ];
+
+export const pathInfo = {
+  dashboard: {
+    path: "Dashboard",
+    subtitle: "Analytics of tender"
+  },
+  orders: {
+    path: "Orders",
+    subtitle: "Database of tender"
+  },
+  integrations: {
+    path: "Integrations",
+    subtitle: "Connection of you favorites tools and their power"
+  },
+};
