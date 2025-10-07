@@ -8,8 +8,8 @@ const font = DM_Sans({
 });
 
 export const metadata = {
-  title: "Hello World?",
-  description: "Automate you work",
+  title: "React Flow",
+  description: "Automate your workflow",
 };
 
 export default function RootLayout({ children }) {

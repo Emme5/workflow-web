@@ -23,13 +23,17 @@ const SelectBox = ({
       <Select onValueChange={onChange} value={value} disabled={disabled}>
         <SelectTrigger className="text-sm font-normal placeholder:font-light focus:ring-0 focus:ring-offset-0 focus-visible:ring-0">
           <SelectValue placeholder={placeholder}>
-            {value || placeholder}
+            {(value &&
+              typeof value === "string" &&
+              value.charAt(0).toUpperCase() + value.slice(1)) ||
+              value ||
+              placeholder}
           </SelectValue>
         </SelectTrigger>
         <SelectContent>{children}</SelectContent>
       </Select>
     </div>
-  ); 
+  );
 };
 
 export default SelectBox;

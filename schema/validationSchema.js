@@ -64,11 +64,11 @@ export const orderSchema = z.object({
     sender: z.object({
         name: z.string().min(2).max(50),
         address: z.string().min(5).max(100),
-        phone: z.string().min(11).max(15),
+        phone: z.string().min(10).max(15),
     }),
     receiver: z.object({
         name: z.string().min(2).max(50),
         address: z.string().min(5).max(100),
-        phone: z.string().min(11).max(15),
+        phone: z.string().min(10).max(15),
     }),
 });
